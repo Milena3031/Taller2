@@ -28,7 +28,7 @@ public class TouchC : MonoBehaviour
         if(Input.touchCount > 0){
             //se referencia al primer dedo q tok la pantalla arroja la lista de eventos que esta tocando
             theTouch = Input.GetTouch(0);
-            //muestra la fase en la cual se encuentran estos eventos
+            //muestra la fase en la cual se encuentran estos eventos touch (en el momento de gestionarlos)
             texto.SetText(theTouch.phase.ToString());
             //limpiar la pantalla
             //estado ende cuando se levanta el dedo de la pantalla
