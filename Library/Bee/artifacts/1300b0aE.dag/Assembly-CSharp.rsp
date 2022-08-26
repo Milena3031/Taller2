@@ -359,6 +359,8 @@
 "Assets/FingersLite/FingersLite/Script/Gestures/ScaleGestureRecognizer.cs"
 "Assets/FingersLite/FingersLite/Script/Gestures/SwipeGestureRecognizer.cs"
 "Assets/FingersLite/FingersLite/Script/Gestures/TapGestureRecognizer.cs"
+"Assets/Scripts/Acelerometro.cs"
+"Assets/Scripts/Gestos.cs"
 "Assets/Scripts/MultiC.cs"
 "Assets/Scripts/Navegacion.cs"
 "Assets/Scripts/TouchC.cs"
