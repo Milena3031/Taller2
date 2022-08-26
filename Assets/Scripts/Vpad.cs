@@ -2,10 +2,10 @@ using UnityEngine;
 using TMPro;
 
 public class Vpad : MonoBehaviour
-{
+{ 
 
     //usar textos del canvas
-    public TextMeshProUGUI dirText, Tcount;
+    public TextMeshProUGUI dirText, Tcount, value;
 
 
     //gestionar los eventos touch
@@ -36,7 +36,7 @@ public class Vpad : MonoBehaviour
         //Dependiendo de la fase se generan los eventos
         if(TC.phase == TouchPhase.Began){
             //Se establecen las coordenadas
-            StartP = TC.position
+            StartP = TC.position;
         } //si no se mueve
         else if(TC.phase == TouchPhase.Moved || TC.phase == TouchPhase.Ended)
         {
@@ -45,7 +45,7 @@ public class Vpad : MonoBehaviour
         EndP = TC.position;
         //diferencia entre vectores
         float x = EndP.x - StartP.x;
-        float y = EndP.y - StartP.y;
+        float y = EndP.y - StartP.y; 
 
         //Si no se esta moviendo x ni y
         if(Mathf.Abs(x)==0 && Mathf.Abs(y)==0){
@@ -62,9 +62,12 @@ public class Vpad : MonoBehaviour
 
             direction = y > 0 ? "Up" : "Down";
         }
+
+            value.SetText("x: " + (x/500).ToString() + " y: " + (y/500).ToString());
         }
         }
 
+        
         dirText.SetText(direction);
         Tcount.SetText(Input.touchCount.ToString());
     }
