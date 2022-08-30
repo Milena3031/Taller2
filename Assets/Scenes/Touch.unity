@@ -726,7 +726,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 183856195}
         m_TargetAssemblyTypeName: Navegacion, Assembly-CSharp
-        m_MethodName: OnLevelWasLoaded
+        m_MethodName: Load
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

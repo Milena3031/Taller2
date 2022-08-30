@@ -9,7 +9,7 @@ using System.Collections.Generic;
 public class Navegacion : MonoBehaviour
 {
     
-    public void OnLevelWasLoaded(int level){
+    public void Load(int level){
         SceneManager.LoadScene(level);
 
         
